@@ -1,0 +1,33 @@
+{
+  "mode": "auto",
+  "hook_group": "auto-capability-and-prompt-pipeline",
+  "hook_event": "PreInvocation",
+  "hook_output_format": "agy_inject_steps",
+  "hook_context_key": "additionalContext",
+  "gemini_models": [
+    "gemini-4-neon-high",
+    "gemini-4-neon-medium",
+    "gemini-4-hydrogen-medium",
+    "gemini-3.8-flash-medium"
+  ],
+  "claude_models": [
+    "claude-sonnet-5-5-high",
+    "claude-opus-5-5-high",
+    "claude-sonnet-5-5-medium"
+  ],
+  "critic_model": "gemini-4-neon-high",
+  "stage_timeout_sec": 60,
+  "total_budget_sec": 150,
+  "max_inject_bytes": 6144,
+  "triage_word_limit": 8,
+  "catalog_cache_sec": 900,
+  "refined_cache_sec": 1800,
+  "circuit_breaker_fails": 3,
+  "ignore_skills": [
+    "auto-capability-and-prompt-pipeline",
+    "swarm_monitor",
+    "swarm_narrator",
+    "swarm_pane"
+  ],
+  "max_catalog_chars": 8000
+}

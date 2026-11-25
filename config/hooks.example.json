@@ -1,0 +1,11 @@
+{
+  "auto-capability-and-prompt-pipeline": {
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python3 ~/.gemini/config/skills/auto-capability-and-prompt-pipeline/scripts/pre_invocation_hook.py",
+        "timeout": 180
+      }
+    ]
+  }
+}
